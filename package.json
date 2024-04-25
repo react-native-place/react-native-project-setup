@@ -7,6 +7,10 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
+    "start:ip": "APP_ENV=ip react-native start",
+    "start:dev": "APP_ENV=dev react-native start",
+    "start:staging": "APP_ENV=staging react-native start",
+    "start:prod": "APP_ENV=prod react-native start",
     "test:clearCache": "jest --clearCache",
     "test": "npm run test:clearCache && jest",
     "test:watch": "npm run test:clearCache && jest --watchAll",
@@ -37,6 +41,7 @@
     "jest": "^29.6.3",
     "lint-staged": "^15.2.2",
     "prettier": "2.8.8",
+    "react-native-dotenv": "^3.4.11",
     "react-test-renderer": "18.2.0",
     "typescript": "5.0.4"
   },

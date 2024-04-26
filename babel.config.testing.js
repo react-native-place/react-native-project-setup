@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const appBabelConfig = require('./babel.config');
 
 module.exports = {

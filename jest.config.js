@@ -6,4 +6,7 @@ module.exports = {
     '\\.js$': ['babel-jest', {configFile: './babel.config.testing.js'}],
   },
   testEnvironment: 'node',
+  transformIgnorePatterns: [
+    'node_modules/(?!((jest-)?@?react-native|react-navigation|@react-navigation/.*))',
+  ],
 };

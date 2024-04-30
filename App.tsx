@@ -1,14 +1,12 @@
-import {SafeAreaView} from 'react-native';
+import 'react-native-gesture-handler';
 
 import {StoreProvider} from './src/redux';
-import {SplashContainer} from './src/containers';
+import {RootNavigation} from './src/navigation';
 
 function App(): React.JSX.Element {
   return (
     <StoreProvider>
-      <SafeAreaView>
-        <SplashContainer />
-      </SafeAreaView>
+      <RootNavigation />
     </StoreProvider>
   );
 }

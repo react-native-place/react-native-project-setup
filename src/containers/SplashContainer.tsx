@@ -1,6 +1,19 @@
-import {SplashScreen} from '../screens';
+import {useEffect} from 'react';
+import {StackScreenProps} from '@react-navigation/stack';
 
-function SplashContainer() {
+import {SplashScreen} from '../screens';
+import {RootNavigationParamList} from '../types/navigation';
+
+type SplashContainerProps = StackScreenProps<RootNavigationParamList, 'Splash'>;
+
+function SplashContainer(props: SplashContainerProps) {
+  useEffect(() => {
+    setTimeout(() => {
+      props?.navigation.navigate('Login');
+    }, 1000);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return <SplashScreen />;
 }
 

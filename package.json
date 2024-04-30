@@ -12,8 +12,11 @@
     "start:staging": "APP_ENV=staging react-native start",
     "start:prod": "APP_ENV=prod react-native start",
     "test:clearCache": "jest --clearCache",
-    "test": "npm run test:clearCache && jest",
-    "test:watch": "npm run test:clearCache && jest --watchAll",
+    "test": "npm run test:clearCache && jest --testPathIgnorePatterns=\\(/__build__/ /__prod__/\\)",
+    "test:build": "npm run test:clearCache && jest --testPathPattern=__build__",
+    "test:prod": "npm run test:clearCache && jest --testPathPattern=__prod__",
+    "test:all": "npm run test:clearCache && jest",
+    "test:watch": "npm run test:clearCache && jest --watchAll --testPathIgnorePatterns=\\(/__build__/ /__prod__/\\)",
     "test:coverage": "npm run test:clearCache && jest --collectCoverage --coverageDirectory=\"./coverage\"",
     "prepare": "husky"
   },

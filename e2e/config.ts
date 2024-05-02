@@ -5,7 +5,6 @@ const runTestOn: 'android' | 'ios' = 'android';
 const capabilities = {
   android: {
     platformName: 'Android',
-    browserName: '',
     'appium:deviceName': 'Pixel_8_Pro_API_34',
     'appium:platformVersion': '14.0',
     'appium:automationName': 'UiAutomator2',
@@ -19,8 +18,7 @@ const capabilities = {
   },
   ios: {
     platformName: 'ios',
-    browserName: '',
-    udid: '',
+    'appium:udid': '',
     'appium:automationName': 'XCuiTest',
     'appium:appPackage': 'com.reactnativebasicproject',
     'appium:appName': 'ReactNativeBasicProject',

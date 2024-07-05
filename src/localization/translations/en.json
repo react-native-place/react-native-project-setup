@@ -1,0 +1,21 @@
+{
+    "language": "English",
+    "screens": {
+        "login": {
+            "title": "Login",
+            "input": {
+                "username": {
+                    "label": "Username",
+                    "placeholder": "Enter username"
+                },
+                "password": {
+                    "label": "Password",
+                    "placeholder": "Enter password"
+                }
+            },
+            "button": {
+                "login": "Login"
+            }
+        }
+    }
+}

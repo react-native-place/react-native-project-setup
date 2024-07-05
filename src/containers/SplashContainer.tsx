@@ -2,7 +2,7 @@ import {useEffect} from 'react';
 import {StackScreenProps} from '@react-navigation/stack';
 
 import {SplashScreen} from '../screens';
-import {RootNavigationParamList} from '../types/navigation';
+import {RootNavigationParamList} from '../types';
 
 type SplashContainerProps = StackScreenProps<RootNavigationParamList, 'Splash'>;
 

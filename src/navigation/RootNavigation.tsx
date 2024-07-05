@@ -1,7 +1,7 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import {RootNavigationParamList} from '../types/navigation';
+import {RootNavigationParamList} from '../types';
 import {LoginContainer, SplashContainer} from '../containers';
 
 const Stack = createStackNavigator<RootNavigationParamList>();
